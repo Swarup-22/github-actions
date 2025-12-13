@@ -11,6 +11,6 @@ jobs:
         - name: context variable job
           run: |
             echo "Github Repository is ${{github.repository}}"
-            echo "Github Repository is ${{github.actor}}"
-            echo "Github Repository is ${{github.job}}"
-            echo "Github Repository is ${{github.repository_owner}}"
+            echo "Github Repository actor is ${{github.actor}}"
+            echo "Name of job is ${{github.job}}"
+            echo "Github Repository owner is ${{github.repository_owner}}"
