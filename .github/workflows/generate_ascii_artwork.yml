@@ -15,7 +15,10 @@ jobs:
         run: cowsay "Love me, I am COW...." > cow.txt
 
       - name: Checking File Exist or not
-        run: grep -i "cow" cow.txt
+        run: test cow.txt
 
       - name: Content of files
         run: cat cow.txt
+
+      - name: List files
+        run: ls -lart
