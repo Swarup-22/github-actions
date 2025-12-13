@@ -10,4 +10,4 @@ jobs:
       steps:
         - name: context variable job
           run: |
-            echo "Github Repository is ${{github.GITHUB_ACTION_REPOSITORY}}"
+            echo "Github Repository is ${{github.repository}}"
