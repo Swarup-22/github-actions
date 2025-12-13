@@ -8,6 +8,9 @@ jobs:
       - name: Welcome Message
         run: echo "Happy to Start Learning Github Actions !!"
 
+      - name: Checkout code
+        uses: actions/checkout@v6
+
       - name: Listing files
         run: ls -lart
 
