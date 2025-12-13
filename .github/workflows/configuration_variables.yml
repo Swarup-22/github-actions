@@ -1,0 +1,16 @@
+name: configuration_variables
+on: 
+  workflow_dispatch
+env:
+    cloud: aws
+
+jobs:
+    configuration_variables_job:
+      runs-on: ubuntu-latest
+      env:
+        Gretting: Hello
+      steps:
+        - name: "Job for configuration variables"
+          run: echo "$Greeting $First_Name is using $cloud with project ID ${{vars.PROJECT_ID}} "
+          env:
+            First_Name: Swarup
