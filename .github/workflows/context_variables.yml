@@ -1,0 +1,13 @@
+name: context_variable_workflow
+on:
+    workflow_dispatch
+env:
+    cloud: aws
+
+jobs:
+    context_variable_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: context variable job
+          run: |
+            echo "Github Repository is ${{github.GITHUB_ACTION_REPOSITORY}}"
