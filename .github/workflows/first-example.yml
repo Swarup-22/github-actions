@@ -7,3 +7,9 @@ jobs:
       steps:
       - name: Welcome Message
         run: echo "Happy to Start Learning Github Actions !!"
+
+      - name: Listing files
+        run: ls -lart
+
+      - name: Read Content from File
+        run: cat README.md
