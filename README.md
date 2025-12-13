@@ -1,5 +1,5 @@
-We will be learning GitHub Actions,
+## **GitHub Actions Learning**
 
-A robust automation tool that empowers you to streamline repetitive tasks
-Automate your software development workflows
-Enhancing productivity and code quality
+- A robust automation tool to streamline repetitive tasks  
+- Automates end-to-end software development workflows  
+- Enhances developer productivity and overall code quality
