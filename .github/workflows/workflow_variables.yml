@@ -2,16 +2,16 @@ name: workflow_variables
 on: 
     workflow_dispatch
 env:
-    cloud: aws
+    cloud: aws  # Workflow Variable
 jobs:
     greeting_job:
       runs-on: ubuntu-latest
       env:
-        Greeting: Hello
+        Greeting: Hello #Worflow Variable inside Job
       steps:
         - name: "Its a Greeting Job"
           run: echo "$Greeting $First_Name is using $cloud!"
           env:
-            First_Name: Swarup
+            First_Name: Swarup #Workflow Variable inside steps
 
 
