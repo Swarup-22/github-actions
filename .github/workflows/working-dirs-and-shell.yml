@@ -16,7 +16,7 @@ jobs:
       steps:
         - name: Working Directory Check
           run: |
-            pwd
-            ls -lart
+            Get-Location
+            dir
             echo $GITHUB_SHA
             echo $GITHUB_REPOSITORY
