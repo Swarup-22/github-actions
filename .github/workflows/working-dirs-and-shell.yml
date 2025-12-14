@@ -16,6 +16,9 @@ jobs:
 
     display-info-on-windows:
       runs-on: windows-latest
+      defaults:
+        run:
+          shell: pwsh
       steps:
         - name: Working Directory Check
           run: |
