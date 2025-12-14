@@ -12,7 +12,7 @@ jobs:
         run: sudo apt install cowsay -y
     
       - name: Execute Cowsay Command
-        run: cowsay -f sheep "I am Sheep" > cow.txt
+        run: cowsay -f dragon-and-cow "I am there" > cow.txt
 
       - name: Checking File Exist or not
         run: test -f cow.txt
