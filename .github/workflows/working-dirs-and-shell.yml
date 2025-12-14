@@ -3,6 +3,7 @@ on: [push]
 defaults:
   run:
     shell: bash
+    working-directory: /acttions/shell-commands
 jobs:
     display-info-on-linux:
       runs-on: ubuntu-latest
