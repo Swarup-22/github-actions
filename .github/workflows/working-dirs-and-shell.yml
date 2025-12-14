@@ -30,3 +30,9 @@ jobs:
             dir
             echo $GITHUB_SHA
             echo $GITHUB_REPOSITORY
+
+        - name: Python Shell
+          shell: python
+          run: |
+            import platform
+            print (platform.processor())
