@@ -15,7 +15,7 @@ jobs:
             echo $GITHUB_REPOSITORY
 
         - name: Change Working Directory
-          working-directory: /github/dir
+          working-directory: /home/runner
           run: pwd
 
     display-info-on-windows:
