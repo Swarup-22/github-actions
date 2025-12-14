@@ -11,3 +11,16 @@ jobs:
         run: |
           node -v
           npm -v
+  
+  parallel-jobs-macos:
+    runs-on: macos-latest
+    steps:
+      - name: View Software Version
+        run: sw_vers
+
+  dependent-job:
+    runs-on: windows-latest
+    needs: [shell-commands]
+    steps:
+      - name: Echo String
+        run: Write-Output "Hello Swarup"
