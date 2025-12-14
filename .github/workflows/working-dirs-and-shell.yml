@@ -1,5 +1,8 @@
 name: Working Directories and shell
 on: [push]
+defaults:
+  run:
+    shell: bash
 jobs:
     display-info-on-linux:
       runs-on: ubuntu-latest
