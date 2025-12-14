@@ -1,0 +1,22 @@
+name: Working Directories and shell
+on: [push]
+jobs:
+    display-info-on-linux:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Working Directory Check
+          run: |
+            pwd
+            ls -lart
+            echo $GITHUB_SHA
+            echo $GITHUB_REPOSITORY
+
+    display-info-on-windows:
+      runs-on: windows-latest
+      steps:
+        - name: Working Directory Check
+          run: |
+            pwd
+            ls -lart
+            echo $GITHUB_SHA
+            echo $GITHUB_REPOSITORY
