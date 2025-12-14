@@ -1,0 +1,13 @@
+name: basic-shell-commands
+on: [push]
+
+jobs:
+  shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: one-liner-command
+        run: echo "Happy Learning GitHub Actions !!!"
+      - name: multi-liner-command
+        run: |
+          node -v
+          npm -v
